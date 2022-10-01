@@ -59,7 +59,7 @@ $enable-gradients:false;
 }
 
 #la_conf:hover, #los_oradores:hover, #el_lyf:hover, #conv_en_orador:hover, #link_comp_tickets:hover {
-  color:white;
+  color: white;
 }
 
 #la_conf, #los_oradores, #el_lyf, #conv_en_orador {
@@ -109,6 +109,10 @@ div.cont_flex {
 div.cont_flex_oradores {
   display: flex;
 }
+
+#row_cards {
+  margin-right: 10rem;
+  margin-left: 10rem;
 
 h1.main {
   font-size: 35px;
