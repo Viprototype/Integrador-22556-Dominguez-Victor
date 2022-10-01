@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Descripcion" content="Trabajo integrador">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@500&family=Roboto:wght@300&family=Scada&display=swap" rel="stylesheet">
+    <title>Integrador</title>
+  </head>
+  <body class="body">
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <div class="menu">
+      <!-- SECCION "NAVBAR" -->
+      <nav class="navbar position-relative navbar-expand-lg">
+        <div class="container-fluid">
+          <img id="logonav" class="logo postition-absolute" src="./assets/img/codoacodo.png" alt="logo de codo a codo">
+          <a id="inicio_conf" class="navbar-brand text-light ps-50px" href="#secmain">Conf Bs As</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav fs-6">
+              <a id="la_conf" class="nav-link" aria-current="page" href="#secmain">La conferencia</a>
+              <a id="los_oradores" class="nav-link" href="#oradores">Los oradores</a>
+              <a id="el_lyf" class="nav-link" href="#lugyfec">El lugar y la fecha</a>
+              <a id="conv_en_orador" class="nav-link" href="#conv_orador">Conviértete en orador</a>
+              <a id="link_comp_tickets" class="nav-link" href="#">Comprar tickets</a>
+            </div>
+          </div>  
+        </div>     
+      </nav>
+    </div>
+    <!-- SECCION PRINCIPAL "CONF BS AS" -->
+    <section id="secmain" class="seccionprincipal position-relative">
+      <div class="body-background img-fluid" style="background-image: url('./assets/img/ba1.jpg'); height: 597px; background-position: bottom; background-size: cover; position: relative;">
+        <div class="mascara postition-absolute" style="background-color: rgba(0, 0, 0, 0.5); height: 597px; background-position: center; background-size: cover;">
+            <div class="cont_flex postition-absolute text-light text-end bottom-30">
+              <h1 class="main">
+                Conf Bs As
+              </h1>
+              <p class="mainconf">
+                Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el  conocimiento y la experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel  que tenemos para ti. Te esperamos!
+              </p>
+              <div class="botones">
+                <a id="btn_conv_orador" class="btn link-light" style="border-color: white;" href="#conv_orador" role="button">Quiero ser orador</a>
+                <a class="btn btn-primary link-light" href="#" role="button">Comprar tickets</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION "ORADORES" -->
+    <div id="oradores" class="oradores container-fluid position-relative">
+      <div class="text-center p-3 postition-absolute">
+        <h3 class="fs-6">
+          CONOCE A LOS
+        </h3>
+        <h3 class="fs-3 pt-0">
+          ORADORES
+        </h3>
+      </div>
+      <div id="row_cards" class="row postition-absolute">
+        <div id="col_steve" class="col mb-3">
+          <div class="card1 border border-success">
+            <img src="./assets/img/steve1.jpg" class="img-fluid rounded-1 d-flex justify-content-center" alt="steve_jobs">
+            <div class="d-flex pt-3" style="font-size: small; margin-bottom: -20px;">
+              <p class="ms-3 me-1 mt-2 px-3 bg-warning rounded-2 pe-1 ps-1 fw-bold">
+                JavaScript
+              </p>
+              <p class="mt-2 px-3 bg-info rounded-2 pe-1 ps-1 fw-bold text-light">
+                React
+              </p>
+            </div>
+            <p class="px-3 fw-semibold fs-5">
+              Steve Jobs
+            </p>
+            <p id="texto_steve" class="px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum officia, doloremque nisi nobis nemo officiis delectus harum! Iusto, iste veniam quo nesciunt magni sed perferendis repudiandae non porro officia. Pariatur!
+            </p>
+          </div> 
+        </div>
+        <div class="col px-3 mb-3">
+          <div class="card2 border border-success">
+            <img src="./assets/img/bill.jpg" class="img-fluid rounded-1 d-flex justify-content-center" alt="bill">
+            <div class="d-flex pt-3" style="font-size: small; margin-bottom: -20px;">
+              <p class="ms-3 me-1 mt-2 px-3 bg-warning rounded-2 pe-1 ps-1 fw-bold">
+                JavaScript
+              </p>
+              <p class="mt-2 px-3 bg-info rounded-2 pe-1 ps-1 fw-bold text-light">
+                React
+              </p>
+            </div>
+            <p class="px-3 fw-semibold fs-5">
+              Bill Gates
+            </p>
+            <p id="texto_bill" class="px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum officia, doloremque nisi nobis nemo officiis delectus harum! Iusto, iste veniam quo nesciunt magni sed perferendis repudiandae non porro officia. Pariatur!
+            </p>
+          </div>
+        </div>
+        <div class="col px-3 mb-3">
+          <div class="card3 border border-success">
+            <img src="./assets/img/ada.jpeg" class="img-fluid rounded-1 d-flex justify-content-center" alt="ada_lovelace">
+            <div class="d-flex pt-3" style="font-size: small; margin-bottom: -20px;">
+              <p class="ms-3 me-1 mt-2 px-3 bg-secondary rounded-2 pe-1 ps-1 fw-bold text-light">
+                Negocios
+              </p>
+              <p class="mt-2 px-3 bg-danger rounded-2 pe-1 ps-1 fw-bold text-light">
+                Startups
+              </p>
+            </div>
+            <p class="px-3 fw-semibold fs-5">
+              Ada Lovelace
+            </p>
+            <p id="texto_ada" class="px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum officia, doloremque nisi nobis nemo officiis delectus harum! Iusto, iste veniam quo nesciunt magni sed perferendis repudiandae non porro officia. Pariatur!
+            </p>
+          </div> 
+        </div>
+      </div>
+    </div>
+    <!-- SECCION "EL LUGAR Y LA FECHA" -->
+    <div id="lugyfec" class="lugaryfecha position-relative p-0">
+      <div class="card postition-absolute text-bg-secondary mb-3 mx-0 rounded-0">
+        <div id="row_lyf" class="row w-100 mx-0 p-0 d-flex">
+          <div class="col p-0 m-0">
+            <img id="honolulu" class="honolulu img-fluid mx-0 w-100" src="./assets/img/honolulu.jpg" alt="honolulu">
+          </div>
+          <div id="col_texto_lyf" class="col text-start border-top border-secondary d-flex">
+            <p class="titulolyf mb-1 postition-absolute">
+              Bs As - Octubre
+            </p>
+            <p>
+              Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos, Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu, han formado una ciudad-condado consolidada que cubre toda la ciudad (Aproximadamente 600km2 de superficie).
+            </p>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SECCION "CONVIERTETE EN ORADOR" -->
+    <div id="conv_orador">
+      <div id="texto_conv_orador" class="conv_orador text-center">
+        <p class="texto_convertirse fs-6 pt-2">CONVIÉRTETE EN UN<br><span class="texto_orador fs-2 fw-semibold">ORADOR</span></p>
+        <p class="texto_mensaje">Anótate como orador para dar una <span class="texto_dotted">charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
+      </div>
+      <div id="row_conv_orador" class="row container-fluid">
+        <div id="form_conv_orador_flex" class="form-floating">
+          <div class="col pt-1 pe-3">
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+          </div>
+          <div class="col pt-1 ps-3">
+            <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+          </div>
+        </div> 
+        <div>
+          <textarea class="form-control" placeholder="Sobre qué quieres hablar?" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2" class="textarea text-muted"></label>
+          <p class="recordatorio text-muted">Recuerda incluir un titulo para tu charla.</p>
+          <input id="enviar" class="btn" type="submit" value="Enviar">
+        </div>
+      </div>
+    </div>
+    <!-- SECCION "FOOTER" -->
+    <div id="secfooter" class="secfooter">
+      <footer id="footer" class="card-footer mt-3 text-center">
+        <div id="row_footer_flex" class="row w-100">
+          <div class="col">
+            <a id="preguntasfrec" href="#" class="enlace">Preguntas frecuentes</a>
+          </div>
+          <div class="col pt-2">
+            <a id="contactanos" href="#" class="enlace">Contáctanos</a>
+          </div>
+          <div class="col pt-2">
+            <a id="prensa" href="#" class="enlace">Prensa</a>
+          </div>
+          <div class="col pt-2">
+            <a id="conferencias" href="#" class="enlace">Conferencias</a>
+          </div>
+          <div class="col">
+            <a id="termycond" href="#" class="enlace">Términos y condiciones</a>
+          </div>
+          <div class="col pt-2">
+            <a id="privacidad" href="#" class="enlace">Privacidad</a>
+          </div>
+          <div class="col pt-2">
+            <a id="estudiantes" href="#" class="enlace">Estudiantes</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
