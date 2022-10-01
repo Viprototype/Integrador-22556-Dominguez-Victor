@@ -63,6 +63,12 @@ div.cont_flex_oradores {
   display: flex;
 }
 
+#row_cards {
+  display: flex;
+  margin-right: 10rem;
+  margin-left: 10rem;
+}
+
 h1.main, .main.h1 {
   font-size: 35px;
 }
@@ -184,6 +190,7 @@ p.recordatorio {
     width: auto;
     height: auto;
     flex-direction: column;
+    margin: 0;
   }
   #texto_steve, #texto_bill, #texto_ada {
     font-size: x-large;
@@ -253,6 +260,7 @@ p.recordatorio {
     width: auto;
     height: auto;
     flex-direction: column;
+    margin: 0;
   }
   #texto_steve, #texto_bill, #texto_ada {
     font-size: x-large;
