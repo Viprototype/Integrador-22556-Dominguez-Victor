@@ -53,13 +53,33 @@ $enable-gradients:false;
   padding-right: 0;
 }
 
+#subir {
+  text-align: center;
+  font-weight: bolder;
+  background-color: #719346;
+  position: fixed;
+  bottom: 30px;
+  display: block;
+  height: 50px;
+  right: 15px;
+  width: auto;
+}
+
 .navbar {
   background: #313a40;
   width: auto;
 }
 
-#la_conf:hover, #los_oradores:hover, #el_lyf:hover, #conv_en_orador:hover, #link_comp_tickets:hover {
-  color: white;
+#la_conf:hover, #los_oradores:hover, #el_lyf:hover, #conv_en_orador:hover {
+  color:white;
+}
+
+#link_comp_tickets:hover {
+  color: #93cb3e;
+}
+
+#link_comp_tickets:active {
+  color: #719346;
 }
 
 #la_conf, #los_oradores, #el_lyf, #conv_en_orador {
@@ -106,13 +126,15 @@ div.cont_flex {
 
 /* SECCION ORADORES */
 
+#row_cards {
+  display: flex;
+  margin-right: 10rem;
+  margin-left: 10rem;
+}
+
 div.cont_flex_oradores {
   display: flex;
 }
-
-#row_cards {
-  margin-right: 10rem;
-  margin-left: 10rem;
 
 h1.main {
   font-size: 35px;
@@ -214,6 +236,89 @@ p.recordatorio {
   color: white;
 }
 
+/* PAGINA DE COMPRA DE TICKETS */
+
+#card_group_compra {
+  padding-top: 2rem;
+  padding-right: 10rem;
+  padding-left: 10rem;
+}
+
+#container_estudiante {
+  padding-top: 1rem;
+}
+
+#card_estudiante {
+  border-radius: 0;
+  border-color: #4972a5;
+}
+
+#container_trainee {
+  padding-top: 1rem;
+}
+
+#card_trainee {
+  border-radius: 0;
+  border-color: #90b6ba;
+}
+
+#container_junior {
+  padding-top: 1rem;
+}
+
+#card_junior {
+  border-radius: 0;
+  border-color: #d5be7a;
+}
+
+#col_nombre, #col_cantidad {
+  padding-right: 0.5;
+  padding-left: 0;
+}
+
+#col_apellido, #col_categoria {
+  padding-right: 0;
+  padding-left: 0.5;
+}
+
+#row_resumen_total {
+  padding-top: 2rem;
+}
+
+#resumen_total {
+  background-color: #cce5ff;
+}
+
+#botones {
+  padding-top: 2rem;
+}
+
+#reset {
+  display: inline;
+  width: 100%;
+  background-color: #96c93e;
+}
+
+#col_boton_borrar {
+  padding-right: 0%;
+  padding-left: 0%;
+  margin-right: 0.8rem;
+  margin-left: 0%;
+}
+
+#resumen {
+  display: inline;
+  width: 100%;
+  background-color: #96c93e;
+}
+
+#col_boton_resumen {
+  padding-right: 0%;
+  padding-left: 0%;
+  margin-right: 0%;
+  margin-left: 0.8rem;
+}
+
 /* RESPONSIVE CELULARES */
 
 @media (max-width: 420px) {
@@ -246,6 +351,7 @@ p.recordatorio {
     width: auto;
     height: auto;
     flex-direction: column;
+    margin: 0;
   }
   
   #texto_steve, #texto_bill, #texto_ada {
@@ -335,6 +441,7 @@ p.recordatorio {
     width: auto;
     height: auto;
     flex-direction: column;
+    margin: 0;
   }
   
   #texto_steve, #texto_bill, #texto_ada {
